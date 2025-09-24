@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>badpass</title>
+  <link rel="stylesheet" href="res/style.css">
+</head>
+<body>
+
+<h2>we do not store your passwords</h2>
+<input type="text" id="pwInput" placeholder="type password">
+<p id="result"></p>
+
+<script src="js/main.js"></script>
+<script>
+    const input = document.getElementById('pwInput');
+    const result = document.getElementById('result');
+
+    input.addEventListener('input', () => {
+        const { text, score } = pwStrength(input.value);
+        result.textContent = `strength: ${text}, score: ${score}/999`;
+    });
+</script>
+
+</body>
+</html>

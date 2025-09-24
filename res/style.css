@@ -1,0 +1,13 @@
+body { 
+    font-family: sans-serif; 
+    padding: 20px; 
+}
+
+input { 
+    padding: 5px; 
+    width: 200px; 
+}
+p { 
+    font-weight: bold; 
+    margin-top: 10px; 
+}
